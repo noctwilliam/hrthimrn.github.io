@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>FUEL</title>
+</head>
+<body>
+    <!---Navbar-->
+    <nav class="navbar fixed-top navbar-expand-xl p-2 mx-2 navbar-light">
+        <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="#">
+                <img src="/images/Asset 2.svg" alt="Brand Logo" width="120" height="70">
+            </a>
+            <button class="navbar-toggler border-white"type="button"data-bs-toggle="collapse"data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"id="navmenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item">
+                        <a href="#fuel-prices" class="nav-link list-weight text-light mx-4 my-2">Fuel Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fourth-panel" class="nav-link list-weight text-light mx-4 my-2">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sixth-panel" class="nav-link list-weight text-light mx-4 my-2">Polls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link list-weight btn btn-outline-light ms-4 px-5 py-3 text-light notify-me">Notify Me</a> <!--add id later for hover changes-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--First Panel-->
+    <section id="panel1" class="bg-image text-light img-fluid">
+        <div class="container h-100">
+            <div class="row d-flex align-items-center h-100">
+                <div></div>
+                <div class="col-12 col-lg-6">
+                    <div class="px-3 px-md-0">
+                        <h1 id="topump">TO PUMP OR NOT TO PUMP?</h1>
+                        <p class="under-topump">
+                            That is the question plaguing most Malaysian who are in need of fuel every Wednesday.
+                            Will the prices go up, stay the same or go down? We're here to help you make a decision
+                            based on clever data analysis with a pinch of intuition.
+                        </p>
+                        <p class="under-topump black-weight">Should you pump?</p>
+                        <a href="#panel2" class="text-decoration-none text-light btn btn-outline-dark btn-lg black-weight px-5 py-2">LET'S FIND OUT</a>
+                    </div>
+                </div>
+                <span class="d-flex justify-content-center">
+                    <a href="#panel2" class="text-white"><i class="fas fa-chevron-down fa-3x"></i></a>
+                </span>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!--Second Panel-->
+    <section id="panel2" class="bg-image py-5">
+        <div class="container d-flex h-100 text-light align-items-center">
+            <div class="d-flex row">
+                <div class="col col-lg-6 mt-4">
+                    <div class="px-3 px-md-0">
+                        <h2 id="pump-now" class="font-weight-bold">PUMP NOW!</h2>
+                        <p id="predict">
+                            We predict that fuel prices will likely go up at midnight, this Thursday.
+                            Head over to your nearest fueling station and enjoy lower fuel prices while you can.
+                        </p>
+                        <p class="medium-weight">Share this on
+                            <a href="" class="">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x text-light"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse" style="color: #b1b616;"></i>
+                                </span>
+                            </a>
+                            <a href="" class="">
+                                <span class="fa-stack fa-sm">
+                                    <i class="fas fa-circle fa-stack-2x text-light"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: #a7b219;"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-6">
+                    <img class="float-md-end" src="/images/pump-icon.svg" width="223.338px" height="239.794px" alt="Fueling Station">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Fuel Prices Panel-->
+    <section id="fuel-prices" class="bg-white my-5">
+        <div class="container">
+            <div class="text-center"> 
+                <h1 class="black-weight">FUEL PRICES</h1>
+            </div>
+        </div>
+    </section>
+    
+    <!--Third Panel-->
+    <section id="panel3"> <!--use navs & tabs bootstrap later-->
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active px-3 px-lg-5 mx-1" id="current-tab" data-bs-toggle="tab" data-bs-target="#current" type="button" role="tab" aria-controls="current" aria-selected="true"><strong>CURRENT</strong></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-3 px-lg-5 mx-1" id="prediction-tab" data-bs-toggle="tab" data-bs-target="#prediction" type="button" role="tab" aria-controls="prediction" aria-selected="false"><strong>PREDICTION</strong></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+                <div class="container">
+                    <div class="text-center pt-5">
+                        <h5 id="current-fuel" class="font-weight-bold">Current Fuel Prices Per Litre</h5>
+                        <h6 id="updated">(Updated 27 Apr 2017)</h6>
+                        <div class="row justify-content-center pt-5">
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/ron97.svg" alt="RON97" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/ron95.svg" alt="RON95" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/diesel.svg" alt="DIESEL" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="prediction" role="tabpanel" aria-labelledby="prediction-tab">
+                <div class="container">
+                    <div class="text-center pt-5">
+                        <h5 id="current-fuel" class="font-weight-bold">Predicted Fuel Prices Per Litre</h5>
+                        <h6 id="updated">(Updated 27 Apr 2017)</h6>
+                        <div class="row justify-content-center pt-5">
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/ron97.svg" alt="RON97" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/ron95.svg" alt="RON95" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <div class="px-2 py-3">
+                                    <img class="img-fluid petrol-pump" src="/images/diesel.svg" alt="DIESEL" width="100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!--Fourth Panel-->
+    <section id="fourth-panel" class="text-light">
+        <div class="container">
+            <h1 class="text-center p-5" id="stats">STATISTICS</h1>
+            <div class="row mt-4 pb-5">
+                <div class="col-12 col-lg-6 pb-4 pb-lg-3">
+                    <h3 class="fw-bold">PRICE TRENDS</h3>
+                    <h6 class="fw-bold py-3">CHOOSE DATE</h6>
+                    <form action="">
+                        <div class="row form-group">
+                            <div class="col-sm-4">
+                                <div class="input-group date" id="datepicker">
+                                    <input type="text" placeholder="FROM" class="form-control date" name="">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white d-block">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="input-group date" id="datepicker2">
+                                    <input type="text" placeholder="TO" class="form-control date" name="">
+                                    <span class="input-group-append">
+                                        <span class="input-group-text bg-white d-block">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="my-2 mt-4 mt-lg-5 mb-4 mb-lg-5">
+                        <span><img class="pb-2 me-2" src="/images/ron97-dash.png" alt="">RON 97</span>
+                    </div>
+                    <div class="my-2 mb-4 mb-lg-5">
+                        <span> <img class="pb-2 me-2" src="/images/ron95-dash.png" alt="">RON 95</span>
+                    </div>
+                    <div class="my-2 mb-4 mb-lg-5">
+                        <span> <img class="pb-2 me-2" src="/images/diesel-dash.png" alt="">DIESEL</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-5"> <img class="img-fluid" src="/images/stats.png" alt=""> </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function(){
+            $('#datepicker').datepicker()
+            $('#datepicker2').datepicker()
+        });
+    </script>
+    
+    <!--Bridge I guess-->
+    <section class="p-3 bg-dark text-white text-center">
+        <div class="container ">
+            <h4 id="view-complete-chart">VIEW COMPLETE CHART +</h4>
+        </div>
+    </section>
+    
+    <!--Fifth Panel-->
+    <section id="fifth-panel" class="p-5 text-light">
+        <div class="container">
+            <div class="row text-center g-2">
+                <div class="col-6 col-md-3">
+                    <h1 class="under-view-chart">05</h1>
+                    <p>Predictions Made</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h1 class="under-view-chart">90%</h1>
+                    <p>Success Rate</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h1 class="under-view-chart">04</h1>
+                    <p>Hits</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h1 class="under-view-chart">01</h1>
+                    <p>Misses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Sixth Panel-->
+    <section id="sixth-panel">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="poll-results" class="col-12 col-lg-6 text-center text-light">
+                    <div class="mt-5">
+                        <h4 class="black-weight">POLL RESULTS</h4>
+                        <strong>20 April - 26 April</strong>
+                    </div>
+                    <div class="my-md-5 my-sm-1 p-3">
+                        <img src="images/poll-results.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                        <div class="row pb-5 justify-content-center">
+                            <div class="col-3"> <span class="text-nowrap up-down-nocharge"> <img class="pb-2 me-2" src="/images/up-span.png" alt="">UP</span> </div>
+                            <div class="col-3"> <span class="text-nowrap up-down-nocharge"> <img class="pb-2 me-2" src="/images/down-span.png" alt="">DOWN</span> </div>
+                            <div class="col-5"> <span class="text-nowrap up-down-nocharge"> <img class="pb-2 me-2" src="/images/no-change-span.png" alt="">NO CHARGE</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="mt-5">
+                        <h4 class="black-weight">WHAT DO YOU THINK FUEL PRICES WILL BE LIKE NEXT WEEK?</h4>
+                        <h6 class="fw-bold pt-2">POLL ENDS IN</h6>
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <h1 class="text-primary poll-end">05 : 15 : 24</h1>
+                                <p class="fw-bold"> DAYS <span class="px-4 mx-3"></span> HOURS <span class="px-4 mx-3"></span> MINS</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="rounded-circle border border-danger circle d-flex justify-content-center align-items-center mx-2" width="100%">
+                                <strong>UP</strong>
+                            </div>
+                            <div class="rounded-circle border border-danger circle d-flex justify-content-center align-items-center mx-2" width="100%">
+                                <strong>DOWN</strong>
+                            </div>
+                            <div class="rounded-circle border border-danger circle d-flex justify-content-center align-items-center mx-2" width="100%">
+                                <strong>NO CHANGE</strong>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mt-5 justify-content-center">
+                        <strong>Share this on</strong>
+                        <div class="py-2">
+                            <ul class="nav text-decoration-none justify-content-center">
+                                <li class="nav-item"><a href="" class="px-2">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li>
+                                <li class="nav-item"><a href="" class="px-2">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="pb-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Second Bridge-->
+    <section id class="p-3 bg-dark text-white text-center">
+        <div class="container ">
+            <h4>DISCLAIMER</h4>
+        </div>
+    </section>
+    
+    <!--Last Panel-->
+    <section id="last-panel" class="text-white text-center">
+        <div class="container">
+            <h1 class="pt-5 black-weight">WANT THE LATEST SCOOP?</h1>
+            <p class="medium-weight">Enable web notifications and be in know!</p>
+            <span></span>
+            <a href="#" id="notify-me" class="text-decoration-none btn btn-danger mb-5 my-2">
+                <span class="black-weight">NOTIFY ME</span>
+            </a>
+            
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <div class="container-md">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex py-3 my-3">
+                <ul class="nav text-decoration-none">
+                    <li class="nav-item"><a class="nav-link px-2 text-black" href="#">Copyright &copy 2017 Pump or Not</a></li>
+                    <div class="px-2 pt-2">|</div>
+                    <li class="nav-item"><a class="nav-link px-2 text-black" href="">Terms & Conditions</a></li>
+                    <div class="px-2 pt-2">|</div>
+                    <li class="nav-item"><a class="nav-link px-2 text-black" href="">Privacy Policy</a></li>
+                    <div class="px-3"></div>
+                    <li class="nav-item"><a href="" class="px-1">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="px-2">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-end py-3 my-3">
+                <img src="/images/ansible.svg" alt="" width="230" height="31">
+            </div>
+        </footer>
+    </div>
+    
+    <!--Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/f28010b7ca.js" crossorigin="anonymous"></script>
+    <!--Bootstrap Bundle JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

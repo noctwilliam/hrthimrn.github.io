@@ -1,0 +1,272 @@
+/**font-face for website: Pier Sans**/
+@font-face {
+    font-family: 'Pier Sans';
+    src: url('PierSans-Light.eot');
+    src: url('PierSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('PierSans-Light.woff2') format('woff2'),
+    url('PierSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pier Sans';
+    src: url('PierSans-Medium.eot');
+    src: url('PierSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('PierSans-Medium.woff2') format('woff2'),
+    url('PierSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pier Sans';
+    src: url('PierSans-Regular.eot');
+    src: url('PierSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PierSans-Regular.woff2') format('woff2'),
+    url('PierSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pier Sans';
+    src: url('PierSans-Black.eot');
+    src: url('PierSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('PierSans-Black.woff2') format('woff2'),
+    url('PierSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pier Sans';
+    src: url('PierSans-Bold.eot');
+    src: url('PierSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('PierSans-Bold.woff2') format('woff2'),
+    url('PierSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+    font-family: 'Pier Sans', 'Arial', sans-serif;
+}
+
+.text-primary{
+    color:#D40000 !important;
+}
+
+.text-secondary {
+    color: black;
+}
+
+.bg-primary{
+    background-color:#D40000;
+}
+
+.border-primary {
+    border-color: #D40000;
+}
+
+.notify-me:hover{
+    color:#D40000 !important;
+}
+
+#topump{
+    font-size: 4.9rem;
+    line-height: 0.9em;
+    font-weight: 900;
+}
+
+@media (max-width: 767px) {
+    #topump{
+        font-size: 3.2rem;
+    }
+}
+#pump-now{
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+.under-topump{
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: -0.015em;
+}
+
+#panel1 .btn-outline-dark {
+    background: rgba(0,0,0,0.3) !important;
+    border: transparent !important;
+}
+
+#panel1 .btn-outline-dark:hover {
+    background: rgba(0,0,0,0.6) !important;
+}
+
+.list-weight{
+    font-size: 0.938rem;
+    font-weight: 800;
+}
+
+.black-weight{
+    font-weight: 800;
+}
+
+.medium-weight {
+    font-weight: 500;
+}
+
+#panel1{
+    background-image: url(/images/Asset\ 1.png);
+    height: 120vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#panel2{
+    background: rgb(0,0,0);
+    background: linear-gradient(280deg, rgba(0,0,0,1) 0%, rgba(27,113,64,1) 30%, rgba(255,218,0,1) 100%); 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#predict{
+    font-size: 0.931rem;
+}
+
+.petrol-pump{
+    width: 482.246px;
+}
+
+#panel3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#panel3 .tab-content > #current{
+    background-color: #E6E6E6;
+}
+
+#panel3 .tab-content > #prediction {
+    background-color: #808080;
+}
+
+#panel3 .nav-tabs .nav-link#current-tab {
+    color: #333333;
+    background-color: #E6E6E6;
+}
+
+#panel3 .nav-tabs .nav-link#prediction-tab {
+    color: #CCCCCC;
+    background-color: #808080;
+    border-color: #808080;
+}
+
+#panel3 .nav-tabs .nav-link.active#current-tab {
+    color: #333333;
+    background-color: #E6E6E6;
+    border-color: #E6E6E6;
+}
+
+#panel3 .nav-tabs .nav-link.active#prediction-tab {
+    background-color: #808080;
+    border-color: #808080;
+}
+
+#fourth-panel{
+    background-color: #2f2e33;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stats{
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 2;
+}
+
+#current-fuel{
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+
+#updated{
+    font-size: 1.7rem;
+}
+
+#view-complete-chart{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#fifth-panel{
+    background: rgb(238,38,38);
+    background: linear-gradient(280deg, rgba(238,38,38,1) 9%, rgba(147,16,143,1) 88%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.under-view-chart {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+#poll-results {
+    background-color: #2F2E33;
+}
+
+#sixth-panel .circle{
+    height: 160px;
+    width: 160px;
+    color: red;
+    border-width: 2px !important;
+}
+
+@media (max-width: 769px){
+    #sixth-panel .circle{
+        height: 130px;
+        width: 130px;
+        color: red;
+        border-width: 2px !important;
+    }
+
+    #sixth-panel .up-down-nocharge{
+        font-size:0.875rem;
+    }
+}
+
+#sixth-panel .circle:hover{
+    background-color: red;
+    color: white;
+}
+
+
+#last-panel{
+    background-image: url(../images/last-panel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#notify-me {
+    background-color: #D40000;
+    padding: 10px 5em;
+}
+
+.poll-end {
+    font-weight: 300;
+    font-size: 4rem;
+}
